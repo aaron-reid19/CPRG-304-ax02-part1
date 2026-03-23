@@ -22,14 +22,14 @@ public interface QueueADT<E>{
 	void enqueue(E element); 
 	
 	/**
-	 * Removes an element from the start of the Queue.
+	 * Removes and returns the Element at the start of the Queue.
 	 * 
 	 * <p><b>Pre-condition:</b> A Queue must exist.</p>
 	 * 
 	 * <p><b>Post-condition:</b> The Element is removed from the start of the Queue.</p>
 	 *
-	 * @param element which is intended to be removed to the Queue.
-	 * @throws NullPointerException if attempting to pass a null value.
+	 * @return the Element removed from the Queue.
+	 * @throws NoSuchElementException if the Queue is empty.
 	 */
 	E dequeue();
 	
