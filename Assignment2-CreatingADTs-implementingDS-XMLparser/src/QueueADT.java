@@ -21,7 +21,16 @@ public interface QueueADT<E>{
 	 */
 	void enqueue(E element); 
 	
-	
+	/**
+	 * Removes and returns the Element at the start of the Queue.
+	 * 
+	 * <p><b>Pre-condition:</b> A Queue must exist.</p>
+	 * 
+	 * <p><b>Post-condition:</b> The Element is removed from the start of the Queue.</p>
+	 *
+	 * @return the Element removed from the Queue.
+	 * @throws NoSuchElementException if the Queue is empty.
+	 */
 	E dequeue();
 	
 	/**
@@ -35,7 +44,16 @@ public interface QueueADT<E>{
 	 * @return element from the front of the Queue.
 	 */
 	E peek();
-	
+
+	/**
+	 * Returns true if the Queue has no Elements.
+	 * 
+	 * <p><b>Pre-condition:</b> A Queue must exist.</p>
+	 * 
+	 * <p><b>Post-condition:</b> No change is made to the Queue.</p>
+	 * 
+	 * @return true if the Queue is empty; false otherwise
+	 */
 	boolean isEmpty();
 	
 	/**
