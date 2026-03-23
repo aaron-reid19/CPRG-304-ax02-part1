@@ -40,7 +40,6 @@ public interface StackADT<E> {
      */
     E peek();
 
-
     /**
      * Returns true if the stack contains no elements.
      *
@@ -59,8 +58,18 @@ public interface StackADT<E> {
      *
      * @return the number of elements in the stack
      */
-	
 	int size();
+
+	/**
+	 * Returns true if the Element exists in the Stack.
+	 *
+	 * <p><b>Pre-condition:</b> None.</p>
+	 * <p><b>Post-condition:</b> The stack is unchanged.</p>
+	 *
+	 * @param element The value to search for in the Stack.
+	 * @return true if the Element exists in the Stack; false otherwise.
+	 * @throws NullPointerException if Element is null.
+	 */
 	boolean contains(E element);
 	
 	/**
